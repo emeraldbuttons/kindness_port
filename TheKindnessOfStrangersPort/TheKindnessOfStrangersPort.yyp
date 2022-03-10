@@ -7,6 +7,7 @@
     {"id":{"name":"sPlayerR","path":"sprites/sPlayerR/sPlayerR.yy",},"order":1,},
     {"id":{"name":"oAirplane","path":"objects/oAirplane/oAirplane.yy",},"order":0,},
     {"id":{"name":"sMaze","path":"sprites/sMaze/sMaze.yy",},"order":3,},
+    {"id":{"name":"oPhysics","path":"objects/oPhysics/oPhysics.yy",},"order":3,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
