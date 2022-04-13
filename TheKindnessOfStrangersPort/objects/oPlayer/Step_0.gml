@@ -4,6 +4,7 @@
 
 acceleration_x = 0;
 
+//walking
 if( !stunned ){
 	if( keyboard_check(vk_left) && (speed_x > -mMaxspeed_x) ){
 		acceleration_x = -movement;
@@ -11,7 +12,8 @@ if( !stunned ){
 		
 		sprite_index = sPlayerL;
 		image_speed = 0.5;
-		x -= movement;
+		speed_x += -movement;
+		x += speed_x;
 	}
 	if( keyboard_check(vk_right) && (speed_x < mMaxspeed_x) ){
 		acceleration_x = movement;
@@ -19,9 +21,9 @@ if( !stunned ){
 		
 		sprite_index = sPlayerR;
 		image_speed = 0.5;
-		x += movement;
+		speed_x += movement;
+		x += speed_x;
 	}
-	//delete later
 	if( !keyboard_check(vk_left) && !keyboard_check(vk_right) ){
 		image_index = 0;
 		image_speed = 0;	
@@ -29,5 +31,26 @@ if( !stunned ){
 
 }
 
+//jumping
+if( !stunned && keyboard_check_pressed(ord("A")) ){
+	jumped = false;
+	
+	//normal jump
+	speed_y = -jump;
+	jumped = true;
+	
+}
+
+gravity_fun();
+
+//basic collision
+if( place_meeting(x+speed_x, y, oMaze) ){
+	while( !place_meeting(x+sign(speed_x), y, oMaze) ){
+		x = x + sign(speed_x);
+	}
+	speed_x = 0;
+}
+
+y += speed_y;
 
 

@@ -12,3 +12,7 @@ mFriction_y = 0.5;
 slopeHeight = 1;
 mMaxspeed_x = 3;
 mMaxspeed_y = 8;
+
+function gravity_fun(){
+	speed_y += mGravity;
+}
