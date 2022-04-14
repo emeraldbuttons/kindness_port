@@ -16,3 +16,18 @@ mMaxspeed_y = 8;
 function gravity_fun(){
 	speed_y += mGravity;
 }
+
+function friction_fun(){
+	if( speed_x > 0 ){
+		speed_x -= mFriction_x;
+		if( speed_x < 0 ){
+			speed_x = 0;
+		}
+	}
+	if( speed_x < 0 ){
+		speed_x += mFriction_x;
+		if( speed_x > 0 ){
+			speed_x = 0;
+		}
+	}
+}

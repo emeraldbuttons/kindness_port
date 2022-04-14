@@ -29,6 +29,11 @@ if( !stunned ){
 
 }
 
+//friction
+if ( (!keyboard_check(vk_left) && !keyboard_check(vk_right)) || abs(speed_x) > mMaxspeed_x ) {
+	friction_fun();
+}
+
 //jumping
 if( !stunned && keyboard_check_pressed(ord("A")) ){
 	jumped = false;
