@@ -47,11 +47,19 @@ if( !stunned && keyboard_check_pressed(ord("A")) ){
 gravity_fun();
 
 //basic collision
+//vertical
 if( place_meeting(x, y+speed_y, oMaze) ){
 	while( !place_meeting(x, y+sign(speed_y), oMaze) ){
 		y += sign(speed_y);
 	}
 	speed_y = 0;
+}
+//horizontal
+if( place_meeting(x+speed_x, y, oMaze) ){
+	while( !place_meeting(x+sign(speed_x), y, oMaze) ){
+		x += sign(speed_x);
+	}
+	speed_x = 0;
 }
 
 
