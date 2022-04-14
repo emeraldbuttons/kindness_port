@@ -13,7 +13,6 @@ if( !stunned ){
 		sprite_index = sPlayerL;
 		image_speed = 0.5;
 		speed_x += -movement;
-		x += speed_x;
 	}
 	if( keyboard_check(vk_right) && (speed_x < mMaxspeed_x) ){
 		acceleration_x = movement;
@@ -22,7 +21,6 @@ if( !stunned ){
 		sprite_index = sPlayerR;
 		image_speed = 0.5;
 		speed_x += movement;
-		x += speed_x;
 	}
 	if( !keyboard_check(vk_left) && !keyboard_check(vk_right) ){
 		image_index = 0;
@@ -44,13 +42,15 @@ if( !stunned && keyboard_check_pressed(ord("A")) ){
 gravity_fun();
 
 //basic collision
-if( place_meeting(x+speed_x, y, oMaze) ){
-	while( !place_meeting(x+sign(speed_x), y, oMaze) ){
-		x = x + sign(speed_x);
+if( place_meeting(x, y+speed_y, oMaze) ){
+	while( !place_meeting(x, y+sign(speed_y), oMaze) ){
+		y += sign(speed_y);
 	}
-	speed_x = 0;
+	speed_y = 0;
 }
 
+
+x += speed_x;
 y += speed_y;
 
 
