@@ -1,0 +1,109 @@
+{
+	"project": {
+		"name": "The Kindness of Strangers",
+		"settings": {
+			"defaultWidth": "1878",
+			"defaultHeight": "2814",
+			"workingDirectory": "graphics"
+		},
+		"objects": {
+			"object": [
+				{
+					"_name": "maze",
+					"_image": "super_tough_maze.png",
+					"_width": "1878",
+					"_height": "2494"
+				},
+				{
+					"_name": "player",
+					"_image": "player.png",
+					"_width": "6",
+					"_height": "12",
+					"_limit": "1"
+				},
+				{
+					"_name": "heart",
+					"_image": "pixel_heart.png",
+					"_width": "11",
+					"_height": "10"
+				}
+			],
+			"folder": [
+				{
+					"object": [
+						{
+							"_name": "person_left",
+							"_image": "person_left.png",
+							"_width": "6",
+							"_height": "12"
+						},
+						{
+							"_name": "person_right",
+							"_image": "person_right.png",
+							"_width": "6",
+							"_height": "12"
+						},
+						{
+							"_name": "person_up",
+							"_image": "person_up.png",
+							"_width": "6",
+							"_height": "12"
+						},
+						{
+							"_name": "person_down",
+							"_image": "person_down.png",
+							"_width": "6",
+							"_height": "12"
+						}
+					],
+					"_name": "strangers"
+				},
+				{
+					"object": [
+						{
+							"_name": "trigger_01",
+							"_image": "trigger_01.png",
+							"_width": "24",
+							"_height": "24"
+						},
+						{
+							"_name": "trigger_02",
+							"_image": "trigger_02.png",
+							"_width": "24",
+							"_height": "24"
+						},
+						{
+							"_name": "trigger_03",
+							"_image": "trigger_03.png",
+							"_width": "24",
+							"_height": "24"
+						},
+						{
+							"_name": "trigger_04",
+							"_image": "trigger_04.png",
+							"_width": "24",
+							"_height": "24"
+						}
+					],
+					"_name": "triggers"
+				}
+			]
+		},
+		"layers": {
+			"objects": [
+				{
+					"_name": "actors",
+					"_gridSize": "12"
+				},
+				{
+					"_name": "triggers",
+					"_gridSize": "4"
+				},
+				{
+					"_name": "maze",
+					"_gridSize": "160"
+				}
+			]
+		}
+	}
+}

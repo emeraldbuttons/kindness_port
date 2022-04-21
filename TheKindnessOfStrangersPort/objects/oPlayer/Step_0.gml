@@ -44,6 +44,7 @@ if( !stunned && keyboard_check_pressed(ord("A")) ){
 	
 }
 
+//gravity
 gravity_fun();
 
 //basic collision
