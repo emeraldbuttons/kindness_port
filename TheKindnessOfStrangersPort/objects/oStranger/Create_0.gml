@@ -7,8 +7,10 @@
 event_inherited();
 
 //sprite frame control
-image_index = 0;
+image_index = 8 * irandom(1);
 image_speed = 0;
+
+
 
 showTalkBubble = false;
 

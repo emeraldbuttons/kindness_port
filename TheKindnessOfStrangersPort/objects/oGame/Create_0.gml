@@ -21,12 +21,45 @@ if( file_exists(working_directory + "main_level_01.json") ){
 	json_par = json_parse(json_str);
 }
 
-x_pos = real( json_par[$"level"][$"actors"][$"person_left"][0][$"_x"] );
-y_pos = real( json_par[$"level"][$"actors"][$"person_left"][0][$"_y"] );
-x_pos = (x_pos * SCALE) - 10;
-y_pos = (y_pos * SCALE) - 4;
-var inst_strange = instance_create_layer(x_pos, y_pos, "Instances", oStranger);
-var inst_strange_aux = instance_create_layer(x_pos, y_pos, "Instances", oStrangerLeft);
+inst_strange = undefined;
+inst_strange_aux = undefined;
+for(var i = 0; i < 15; i += 1){
+	x_pos = real( json_par[$"level"][$"actors"][$"person_left"][i][$"_x"] );
+	y_pos = real( json_par[$"level"][$"actors"][$"person_left"][i][$"_y"] );
+	x_pos = (x_pos * SCALE) - 10;
+	y_pos = (y_pos * SCALE) - 4;
+	inst_strange = instance_create_layer(x_pos, y_pos, "Instances", oStranger);
+	inst_strange_aux = instance_create_layer(x_pos, y_pos, "Instances", oStrangerLeft);
+	
+}
+for(var i = 0; i < 23; i += 1){
+	x_pos = real( json_par[$"level"][$"actors"][$"person_right"][i][$"_x"] );
+	y_pos = real( json_par[$"level"][$"actors"][$"person_right"][i][$"_y"] );
+	x_pos = (x_pos * SCALE) - 10;
+	y_pos = (y_pos * SCALE) - 4;
+	inst_strange = instance_create_layer(x_pos, y_pos, "Instances", oStranger);
+	inst_strange_aux = instance_create_layer(x_pos, y_pos, "Instances", oStrangerRight);
+	
+}
+for(var i = 0; i < 15; i += 1){
+	x_pos = real( json_par[$"level"][$"actors"][$"person_up"][i][$"_x"] );
+	y_pos = real( json_par[$"level"][$"actors"][$"person_up"][i][$"_y"] );
+	x_pos = (x_pos * SCALE) - 10;
+	y_pos = (y_pos * SCALE) - 4;
+	inst_strange = instance_create_layer(x_pos, y_pos, "Instances", oStranger);
+	inst_strange_aux = instance_create_layer(x_pos, y_pos, "Instances", oStrangerUp);
+	
+}
+for(var i = 0; i < 21; i += 1){
+	x_pos = real( json_par[$"level"][$"actors"][$"person_down"][i][$"_x"] );
+	y_pos = real( json_par[$"level"][$"actors"][$"person_down"][i][$"_y"] );
+	x_pos = (x_pos * SCALE) - 10;
+	y_pos = (y_pos * SCALE) - 4;
+	inst_strange = instance_create_layer(x_pos, y_pos, "Instances", oStranger);
+	inst_strange_aux = instance_create_layer(x_pos, y_pos, "Instances", oStrangerDown);
+	
+}
+
 
 //create maze
 x_maze = real( json_par[$"level"][$"maze"][$"maze"][$"_x"] );
