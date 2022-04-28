@@ -1,6 +1,6 @@
 {
   "bboxMode": 0,
-  "collisionKind": 0,
+  "collisionKind": 1,
   "type": 0,
   "origin": 0,
   "preMultiplyAlpha": false,
@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 3755,
+  "bbox_right": 21,
   "bbox_top": 0,
-  "bbox_bottom": 2493,
+  "bbox_bottom": 19,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 3756,
-  "height": 2494,
+  "width": 22,
+  "height": 20,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"95d48780-e997-40c4-8f54-03ffb93bb81b","path":"sprites/sMaze/sMaze.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"95d48780-e997-40c4-8f54-03ffb93bb81b","path":"sprites/sMaze/sMaze.yy",},"LayerId":{"name":"364cb599-e993-4db2-8cf5-9cc91bdba3c2","path":"sprites/sMaze/sMaze.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sMaze","path":"sprites/sMaze/sMaze.yy",},"resourceVersion":"1.0","name":"95d48780-e997-40c4-8f54-03ffb93bb81b","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"20bd8bb9-a166-4328-bf1a-367a0e2c4ba3","path":"sprites/sBigHeart/sBigHeart.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"20bd8bb9-a166-4328-bf1a-367a0e2c4ba3","path":"sprites/sBigHeart/sBigHeart.yy",},"LayerId":{"name":"9fb3bbde-0f69-4d4b-8c85-0d500f8aa12e","path":"sprites/sBigHeart/sBigHeart.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sBigHeart","path":"sprites/sBigHeart/sBigHeart.yy",},"resourceVersion":"1.0","name":"20bd8bb9-a166-4328-bf1a-367a0e2c4ba3","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sMaze","path":"sprites/sMaze/sMaze.yy",},
+    "spriteId": {"name":"sBigHeart","path":"sprites/sBigHeart/sBigHeart.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"fb9b4fd2-6e85-4a16-bd5a-2eed20c49f0b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"95d48780-e997-40c4-8f54-03ffb93bb81b","path":"sprites/sMaze/sMaze.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"bd21f825-c532-47f7-bfec-f683c7e24e48","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"20bd8bb9-a166-4328-bf1a-367a0e2c4ba3","path":"sprites/sBigHeart/sBigHeart.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sMaze","path":"sprites/sMaze/sMaze.yy",},
+    "parent": {"name":"sBigHeart","path":"sprites/sBigHeart/sBigHeart.yy",},
     "resourceVersion": "1.4",
-    "name": "sMaze",
+    "name": "sBigHeart",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"364cb599-e993-4db2-8cf5-9cc91bdba3c2","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9fb3bbde-0f69-4d4b-8c85-0d500f8aa12e","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sMaze",
+  "name": "sBigHeart",
   "tags": [],
   "resourceType": "GMSprite",
 }
