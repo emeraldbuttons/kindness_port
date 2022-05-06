@@ -8,3 +8,6 @@ if( showTalkBubble ){
 } else {
 	visible = false;
 }
+
+x = getX();
+y = getY();

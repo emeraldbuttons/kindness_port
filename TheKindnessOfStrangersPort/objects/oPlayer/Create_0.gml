@@ -24,6 +24,8 @@ stunned = false;
 start_x = 0;
 start_y = 0;
 
+visible = false;
+
 function player(x_par, y_par){
 	x = x_par;
 	y = y_par;

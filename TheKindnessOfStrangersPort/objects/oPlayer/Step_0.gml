@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+player(x,y);
 
 acceleration_x = 0;
 
@@ -35,7 +36,7 @@ if ( (!keyboard_check(vk_left) && !keyboard_check(vk_right)) || abs(speed_x) > m
 }
 
 //jumping
-if( !stunned && keyboard_check_pressed(ord("A")) ){
+if( !stunned && keyboard_check_pressed(ord("X")) ){
 	jumped = false;
 	
 	//normal jump
@@ -69,6 +70,7 @@ if( place_meeting(x, y+speed_y, oMaze2) ){
 //	speed_x = 0;
 //}
 //heart
+
 if( place_meeting(x, y+speed_y, oBigHeart) ){
 	while( !place_meeting(x, y+sign(speed_y), oBigHeart) ){
 		y += sign(speed_y);

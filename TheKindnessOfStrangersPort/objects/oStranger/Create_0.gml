@@ -30,3 +30,11 @@ function checkHelp(){
 	
 }
 
+function getX(){
+	return x;
+}
+
+function getY(){
+	return y;
+}
+
