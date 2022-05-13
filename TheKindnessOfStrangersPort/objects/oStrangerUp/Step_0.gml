@@ -9,5 +9,5 @@ if( showTalkBubble ){
 	visible = false;
 }
 
-x = getX();
-y = getY();
+x = strange_x;
+y = strange_y;

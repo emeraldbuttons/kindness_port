@@ -18,3 +18,6 @@ if( place_meeting(x, y+speed_y, oMaze2) ){
 	}
 	speed_y = 0;
 }
+
+strange_x = x;
+strange_y = y;

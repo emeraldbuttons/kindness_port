@@ -10,7 +10,8 @@ event_inherited();
 image_index = 8 * irandom(1);
 image_speed = 0;
 
-
+strange_x = x;
+strange_y = y;
 
 showTalkBubble = false;
 
@@ -28,13 +29,5 @@ function checkHelp(){
 		}
 	}
 	
-}
-
-function getX(){
-	return x;
-}
-
-function getY(){
-	return y;
 }
 
