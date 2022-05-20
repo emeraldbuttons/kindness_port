@@ -63,14 +63,20 @@ if( place_meeting(x, y+speed_y, oMaze2) ){
 	speed_y = 0;
 }
 //horizontal
-//if( place_meeting(x+speed_x, y, oMaze) ){
-//	while( !place_meeting(x+sign(speed_x), y, oMaze) ){
-//		x += sign(speed_x);
-//	}
-//	speed_x = 0;
-//}
-//heart
+if( place_meeting(x+speed_x, y, oMaze) ){
+	while( !place_meeting(x+sign(speed_x), y, oMaze) ){
+		x += sign(speed_x);
+	}
+	speed_x = 0;
+}
+if( place_meeting(x+speed_x, y, oMaze2) ){
+	while( !place_meeting(x+sign(speed_x), y, oMaze) ){
+		x += sign(speed_x);
+	}
+	speed_x = 0;
+}
 
+//heart
 if( place_meeting(x, y+speed_y, oBigHeart) ){
 	while( !place_meeting(x, y+sign(speed_y), oBigHeart) ){
 		y += sign(speed_y);
