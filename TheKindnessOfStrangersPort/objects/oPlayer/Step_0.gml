@@ -70,7 +70,7 @@ if( place_meeting(x+speed_x, y, oMaze) ){
 	speed_x = 0;
 }
 if( place_meeting(x+speed_x, y, oMaze2) ){
-	while( !place_meeting(x+sign(speed_x), y, oMaze) ){
+	while( !place_meeting(x+sign(speed_x), y, oMaze2) ){
 		x += sign(speed_x);
 	}
 	speed_x = 0;
